@@ -1,0 +1,64 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <iomanip>
+using namespace std;
+
+
+int main() {
+
+
+
+    //wyswietla menu z pliku - Julia, Elene
+    cout << "--------------MENU----------------" << endl;
+    cout << "Dania Glowne" << endl;
+
+    string MenuDaniaGlowne;
+    ifstream Glowne("C:\\Users\\julie\\Desktop\\data\\menu\\dania_glowne.txt");
+    while (getline(Glowne, MenuDaniaGlowne)) {
+        cout << MenuDaniaGlowne << endl;
+    }
+    Glowne.close();
+
+    cout << "Przystawki" << endl;
+
+    string MenuPrzystawki;
+    ifstream Przystawki("C:\\Users\\julie\\Desktop\\data\\menu\\przystawki.txt");
+    while (getline(Przystawki, MenuPrzystawki)) {
+        cout << MenuPrzystawki << endl;
+    }
+    Przystawki.close();
+
+    cout << "Desery" << endl;
+
+    string MenuDesery;
+    ifstream Desery("C:\\Users\\julie\\Desktop\\data\\menu\\desery.txt");
+    while (getline(Desery, MenuDesery)) {
+        cout << MenuDesery << endl;
+    }
+
+    Desery.close();
+
+    cout << "Napoje" << endl;
+    cout << "Zimne" << endl;
+
+    string NapojeZimne;
+    ifstream Zimne("C:\\Users\\julie\\desktop\\data\\menu\\napoje_zimne.txt");
+    while (getline(Zimne, NapojeZimne)) {
+        cout << NapojeZimne << endl;
+    }
+
+    Zimne.close();
+
+    cout << "Gorace" << endl;
+
+    string NapojeGorace;
+    ifstream Gorace("C:\\users\\julie\\desktop\\data\\menu\\napoje_gorace.txt");
+    while (getline(Gorace, NapojeGorace)) {
+        cout << NapojeGorace << endl;
+    }
+
+    Gorace.close();
+
+    return 0;
+}
